@@ -1,0 +1,18 @@
+Joe Rozman
+HW2
+Written Questions
+
+3.1:
+	S(1) = 2
+	S(N) = S(N/2) + (log(N)+1)/2
+
+3.2 
+	S(N/2) = S(N/4) + (log(N)+1)/4
+	S(N) = [S(N/4) + (log(N)+1)/4] + (log(N)+1)/2
+    S(N/4) = S(N/8) + (log(N)+1)/8
+    S(N) = [[S(N/8) + (log(N)+1)/8] + (log(N)+1)/4] + (log(N)+1)/2
+    S(N) = S(N/2^k) + k*(log(N)+1)/2
+    k = log(N)
+    2^k = N
+    S(N) = C(N/N) + log(N)*(log(N)+1)/2
+	S(N) = 2 + log(N)*(log(N)+1)/2
